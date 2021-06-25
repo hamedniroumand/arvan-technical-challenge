@@ -1,0 +1,39 @@
+{
+  "name": "arvan-challenge",
+  "version": "1.0.0",
+  "description": "",
+  "main": "",
+  "scripts": {
+    "build:prod": "webpack --mode=production --progress",
+    "build:dev": "webpack --mode=development --progress",
+    "watch": "webpack --mode=development --watch --progress",
+    "serve": "webpack serve --mode=development --progress"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "@babel/core": "^7.14.3",
+    "@babel/preset-env": "^7.14.4",
+    "babel-loader": "^8.2.2",
+    "babel-minify-webpack-plugin": "^0.3.1",
+    "clean-webpack-plugin": "*",
+    "copy-webpack-plugin": "^9.0.0",
+    "css-loader": "^5.2.4",
+    "esbuild-loader": "^2.13.1",
+    "file-loader": "^6.2.0",
+    "handlebars": "^4.7.7",
+    "handlebars-loader": "^1.7.1",
+    "html-webpack-plugin": "^5.3.1",
+    "mini-css-extract-plugin": "^1.6.0",
+    "purgecss-webpack-plugin": "^4.0.3",
+    "resolve-url-loader": "^4.0.0",
+    "sass": "^1.34.1",
+    "sass-loader": "^11.0.1",
+    "style-loader": "^2.0.0",
+    "svg-inline-loader": "^0.8.2",
+    "webpack": "^5.36.2",
+    "webpack-cli": "^4.7.0",
+    "webpack-dev-server": "^3.11.2"
+  }
+}
