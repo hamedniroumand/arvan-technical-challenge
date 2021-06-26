@@ -1,0 +1,13 @@
+.text-primary {
+  font-size: 4rem;
+  font-weight: 900;
+  line-height: 80px;
+
+  @include responsive(sm) {
+    font-size: 3rem;
+  }
+}
+
+.text-shadow {
+  text-shadow: $primary-color-dark 0.701px 4.132px 0px;
+}

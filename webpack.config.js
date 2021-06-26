@@ -4,8 +4,8 @@ const glob = require("glob");
 
 const HtmlWebpackPlugin = require("html-webpack-plugin");
 const MiniCssExtractPlugin = require("mini-css-extract-plugin");
-const { CleanWebpackPlugin } = require("clean-webpack-plugin");
-const { ESBuildMinifyPlugin } = require("esbuild-loader");
+const {CleanWebpackPlugin} = require("clean-webpack-plugin");
+const {ESBuildMinifyPlugin} = require("esbuild-loader");
 const PurgecssPlugin = require("purgecss-webpack-plugin");
 const CopyWebpackPlugin = require("copy-webpack-plugin");
 const MinifyPlugin = require("babel-minify-webpack-plugin");
@@ -46,7 +46,7 @@ const config = {
                 use: [
                     {
                         loader: "babel-loader",
-                        options: { presets: ["@babel/preset-env"] },
+                        options: {presets: ["@babel/preset-env"]},
                     },
                 ],
             },
@@ -67,7 +67,17 @@ const config = {
             },
             {
                 test: /\.svg$/,
-                loader: "svg-inline-loader",
+                use: [
+                    // { loader: "svg-inline-loader" },
+                    {
+                        loader: 'svg-url-loader',
+                        options: {
+                            encoding: "base64",
+                            iesafe: true,
+                        },
+                    }
+                ]
+
             },
             {
                 test: /\.(woff|ttf|eot|otf|woff2)$/,
@@ -115,8 +125,7 @@ const config = {
 };
 
 
-
-module.exports = (env, { mode }) => {
+module.exports = (env, {mode}) => {
     let isDevelopment = mode === "development";
 
     if (isDevelopment) {
