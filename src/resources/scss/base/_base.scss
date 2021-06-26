@@ -1,10 +1,21 @@
-html {
-    font-size: 14px;
+html, html * {
+    font-size: $font-size;
+    line-height: $font-size * 1.6;
+    @include responsive(sm) {
+        font-size: 12px;
+
+        p, .paragraph {
+            font-size: 14px;
+            line-height: 14px * 2;
+        }
+    }
+
 }
 
 body {
     box-sizing: border-box;
     font-family: "iranyekan";
+    color: #6A7D9B;
 }
 
 * {

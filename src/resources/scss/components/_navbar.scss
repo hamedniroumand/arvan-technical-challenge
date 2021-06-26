@@ -2,10 +2,7 @@
   $btn-height: 40px;
   .navbar {
     color: #EEEEee;
-    transition: color 0.3s;
-    &:hover {
-      color: white;
-    }
+
 
     display: flex;
     justify-content: space-between;
@@ -25,12 +22,13 @@
     }
 
     &__item {
-      &:not(:last-child) {
-        margin-left: 3.2rem;
-    }
-
+      margin-right: 3rem;
       font-weight: 500;
+      transition: color 0.3s;
 
+      &:hover {
+        color: white;
+      }
     }
 
     &__left {

@@ -28,12 +28,12 @@ header {
   }
   &--back {
     position: absolute;
-    bottom: -19px;
+    bottom: -10px;
     left: 0;
     width: 100%;
     background-position-x: 170px;
-    background-image: url("../../../public/images/city.svg");
-    opacity: 0.15;
+    background-image: url("../../../public/images/city-back.svg");
+    opacity: 0.45;
     height: 100px;
     background-repeat: repeat-x;
   }

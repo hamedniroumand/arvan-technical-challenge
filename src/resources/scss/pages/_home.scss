@@ -1,0 +1,22 @@
+section.projects {
+  background-color: $secondary-color-light;
+  padding: 9rem 0;
+
+  .project-info {
+    text-align: center;
+    margin-bottom: 3rem;
+    &__section-title {
+      font-weight: 700;
+    }
+
+    &__section-subtitle {
+      margin-top: 1.5rem;
+      color: #5c5c5c;
+    }
+  }
+}
+
+section.meeting-structure {
+  background-color: #EEF2F7;
+  padding: 9rem 0;
+}

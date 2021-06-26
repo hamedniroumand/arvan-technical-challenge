@@ -98,6 +98,14 @@ const config = {
                 use: [
                     {
                         loader: "handlebars-loader",
+                        options: {
+                            helperDirs: [
+                                __dirname + "/src/helpers",
+                            ],
+                            partialDirs: [
+                                __dirname + "/src/view/components",
+                            ]
+                        }
                     },
                 ],
             },
@@ -119,6 +127,7 @@ const config = {
             filename: "index.html",
             chunks: ["styles", "app", "home", "vendors~app~home"],
             favicon: "./src/public/images/favicon.png",
+            templateParameters: require("./data.json"),
             title: 'ابر آروان | چالش تکنیکال استخدامی'
         }),
     ],
@@ -148,7 +157,7 @@ module.exports = (env, {mode}) => {
                     nodir: true,
                 }),
                 safelist: () => ({
-                    standard: [],
+                    standard: ['active', 'deactivated'],
                     deep: [],
                     greedy: [],
                 }),

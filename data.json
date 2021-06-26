@@ -1,0 +1,28 @@
+{
+  "projects": [
+    {
+      "title": "Wordpress",
+      "content": {
+        "box": [
+          {
+            "icon": "",
+            "title": "درخواست دهنده تیم",
+            "subtitle": "تیم CDN"
+          },{
+            "icon": "سسس",
+            "title": "روش اجرا و ارائه",
+            "subtitle": "تیم CDN"
+          },{
+            "icon": "سسس",
+            "title": "زبان پروژه",
+            "subtitle": "تیم CDN"
+          },{
+            "icon": "سسس",
+            "title": "مبلغ پروژه",
+            "subtitle": "تیم CDN"
+          }
+        ]
+      }
+    }
+  ]
+}

@@ -2,35 +2,41 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="06e2824d-f201-4572-8710-27039a7b4fdd" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/.idea/arvan-challenge.iml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/modules.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/public/images/city.svg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/resources/scss/components/_button.scss" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/resources/scss/components/_navbar.scss" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/resources/scss/layouts/_header.scss" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/resources/scss/vendor/bootstrap/bootstrap-grid.rtl.min.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/view/components/header/index.hbs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/view/components/header/navbar.hbs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/view/components/svg/call.hbs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/view/components/svg/city.hbs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/view/components/svg/global.hbs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/view/components/svg/logo.hbs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/view/components/svg/menu.hbs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.gitignore" beforeDir="false" afterPath="$PROJECT_DIR$/.gitignore" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/package.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/data.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/helpers/dynamic-include.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/public/images/author.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/public/images/city-back.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/resources/scss/components/_expand-arrow.scss" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/resources/scss/components/_icon-box.scss" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/resources/scss/components/_list-style.scss" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/resources/scss/components/_meeting-structure.scss" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/resources/scss/components/_projects-card.scss" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/resources/scss/pages/_home.scss" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/resources/scss/pages/_index.scss" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/view/components/icon-box.hbs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/view/components/meeting-structure/meeting-structure.hbs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/view/components/projects/projects.hbs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/view/components/projects/tabs.hbs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/view/components/svg/arrow-down.hbs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/view/components/svg/arrow-up-circle.hbs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/view/components/svg/code.hbs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/view/components/svg/dollar.hbs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/view/components/svg/edit.hbs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/view/components/svg/file-plus.hbs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/view/components/svg/github.hbs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/view/components/svg/users.hbs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/resources/js/home-page.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/resources/js/home-page.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/resources/scss/abstracs/_mixins.scss" beforeDir="false" afterPath="$PROJECT_DIR$/src/resources/scss/abstracs/_mixins.scss" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/resources/scss/abstracs/_variables.scss" beforeDir="false" afterPath="$PROJECT_DIR$/src/resources/scss/abstracs/_variables.scss" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/resources/scss/base/_base.scss" beforeDir="false" afterPath="$PROJECT_DIR$/src/resources/scss/base/_base.scss" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/resources/scss/base/_typography.scss" beforeDir="false" afterPath="$PROJECT_DIR$/src/resources/scss/base/_typography.scss" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/resources/scss/components/_index.scss" beforeDir="false" afterPath="$PROJECT_DIR$/src/resources/scss/components/_index.scss" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/resources/scss/layouts/_index.scss" beforeDir="false" afterPath="$PROJECT_DIR$/src/resources/scss/layouts/_index.scss" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/resources/scss/components/_navbar.scss" beforeDir="false" afterPath="$PROJECT_DIR$/src/resources/scss/components/_navbar.scss" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/resources/scss/layouts/_header.scss" beforeDir="false" afterPath="$PROJECT_DIR$/src/resources/scss/layouts/_header.scss" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/resources/scss/main.scss" beforeDir="false" afterPath="$PROJECT_DIR$/src/resources/scss/main.scss" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/resources/scss/vendor/_index.scss" beforeDir="false" afterPath="$PROJECT_DIR$/src/resources/scss/vendor/_index.scss" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/resources/scss/vendor/bootstrap.rtl.min.css" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/view/components/hello.hbs" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/resources/scss/utilities/_index.scss" beforeDir="false" afterPath="$PROJECT_DIR$/src/resources/scss/utilities/_index.scss" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/view/components/header/index.hbs" beforeDir="false" afterPath="$PROJECT_DIR$/src/view/components/header/header.hbs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/view/components/header/navbar.hbs" beforeDir="false" afterPath="$PROJECT_DIR$/src/view/components/header/navbar.hbs" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/view/pages/index.hbs" beforeDir="false" afterPath="$PROJECT_DIR$/src/view/pages/index.hbs" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/webpack.config.js" beforeDir="false" afterPath="$PROJECT_DIR$/webpack.config.js" afterDir="false" />
     </list>
@@ -73,10 +79,10 @@
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
       <recent name="C:\Users\Hamed\Documents\programming\works\arvan-challenge\build" />
+      <recent name="C:\Users\Hamed\Documents\programming\works\arvan-challenge\src\public\images" />
       <recent name="C:\Users\Hamed\Documents\programming\works\arvan-challenge\src\resources\scss\layouts\images" />
       <recent name="C:\Users\Hamed\Documents\programming\works\arvan-challenge\src\public" />
       <recent name="C:\Users\Hamed\Documents\programming\works\arvan-challenge\src\resources\scss\vendor\bootstrap" />
-      <recent name="C:\Users\Hamed\Documents\programming\works\arvan-challenge\src\resources\scss\vendor" />
     </key>
     <key name="MoveFile.RECENT_KEYS">
       <recent name="C:\Users\Hamed\Documents\programming\works\arvan-challenge\src\view\components\svg" />
@@ -132,6 +138,7 @@
       <option name="presentableId" value="Default" />
       <updated>1624648486038</updated>
       <workItem from="1624648487280" duration="15303000" />
+      <workItem from="1624687455826" duration="37113000" />
     </task>
     <servers />
   </component>
@@ -148,6 +155,7 @@
         </entry>
       </map>
     </option>
+    <option name="oldMeFiltersMigrated" value="true" />
   </component>
   <component name="VcsManagerConfiguration">
     <option name="ADD_EXTERNAL_FILES_SILENTLY" value="true" />
