@@ -44,10 +44,23 @@
       }
       .btn-icon {
         width: $btn-height;
+        border-radius: 50%;
       }
       .btn-secondary {
         span {
           margin-right: 0.6rem;
+          position: relative;
+
+          svg {
+            position: absolute;
+            right: 0;
+            top: 50%;
+            transform: translateY(-50%);
+          }
+        }
+
+        &:nth-last-of-type(1) {
+          margin-left: 3.2rem;
         }
       }
     }

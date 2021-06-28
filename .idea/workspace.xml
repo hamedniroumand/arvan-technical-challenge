@@ -2,23 +2,13 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="06e2824d-f201-4572-8710-27039a7b4fdd" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/src/resources/scss/components/_categories.scss" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/view/components/categories/categories.hbs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/view/components/svg/analytics.hbs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/view/components/svg/bug-tracking.hbs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/view/components/svg/cms.hbs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/view/components/svg/custome-care.hbs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/view/components/svg/database.hbs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/view/components/svg/e-commerce.hbs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/view/components/svg/e-learning.hbs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/view/components/svg/infrastructure.hbs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/package-lock.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/postcss.config.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/resources/scss/base/_typography.scss" beforeDir="false" afterPath="$PROJECT_DIR$/src/resources/scss/base/_typography.scss" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/resources/scss/components/_index.scss" beforeDir="false" afterPath="$PROJECT_DIR$/src/resources/scss/components/_index.scss" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/resources/scss/components/_projects-card.scss" beforeDir="false" afterPath="$PROJECT_DIR$/src/resources/scss/components/_projects-card.scss" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/resources/scss/pages/_home.scss" beforeDir="false" afterPath="$PROJECT_DIR$/src/resources/scss/pages/_home.scss" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/view/components/projects/projects.hbs" beforeDir="false" afterPath="$PROJECT_DIR$/src/view/components/projects/projects.hbs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/view/pages/index.hbs" beforeDir="false" afterPath="$PROJECT_DIR$/src/view/pages/index.hbs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/package.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/resources/scss/components/_navbar.scss" beforeDir="false" afterPath="$PROJECT_DIR$/src/resources/scss/components/_navbar.scss" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/resources/scss/components/_register-form.scss" beforeDir="false" afterPath="$PROJECT_DIR$/src/resources/scss/components/_register-form.scss" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/webpack.config.js" beforeDir="false" afterPath="$PROJECT_DIR$/webpack.config.js" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -134,7 +124,7 @@
       <workItem from="1624771763999" duration="1211000" />
       <workItem from="1624813277488" duration="2753000" />
       <workItem from="1624862929748" duration="18527000" />
-      <workItem from="1624893974486" duration="7603000" />
+      <workItem from="1624893974486" duration="11502000" />
     </task>
     <servers />
   </component>

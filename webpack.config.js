@@ -164,6 +164,7 @@ module.exports = (env, {mode}) => {
             }),
             new MinifyPlugin(),
         );
+
     }
 
     config.module.rules.push(
@@ -171,25 +172,28 @@ module.exports = (env, {mode}) => {
             {
                 test: /\.css$/,
                 use: [
-                    isDevelopment
-                        ? "style-loader"
-                        : MiniCssExtractPlugin.loader,
+                    isDevelopment ? "style-loader" : MiniCssExtractPlugin.loader,
                     "css-loader",
+                    "postcss-loader"
                 ],
             },
             {
                 test: /\.s[ac]ss$/,
                 use: [
-                    isDevelopment
-                        ? "style-loader"
-                        : MiniCssExtractPlugin.loader,
+                    isDevelopment ? "style-loader" : MiniCssExtractPlugin.loader,
                     "css-loader",
                     "resolve-url-loader",
+                    "postcss-loader",
                     "sass-loader",
                 ],
             },
         ]
     );
+
+    if(!isDevelopment) {
+        const object = config.module.rules.find(m => m.test == /\.css$/);
+        console.log(object)
+    }
 
     return config;
 };

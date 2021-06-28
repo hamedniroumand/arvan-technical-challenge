@@ -13,7 +13,7 @@
       padding: 1.5rem;
       border-radius: 12px;
       position: relative;
-      overflow: hidden;
+      overflow-x: clip;
 
       &:not(:last-child) {
         margin-bottom: 1.5rem;
