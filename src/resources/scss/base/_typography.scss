@@ -47,7 +47,7 @@ h4, h5, h6 {
 
 .heading-subtitle {
   color: $primary-color;
-  font-size: .8rem;
+  font-size: 1.2rem;
 }
 
 .text-subtitle {
@@ -57,4 +57,18 @@ h4, h5, h6 {
 
 .text-shadow {
   text-shadow: $primary-color-dark 0.701px 4.132px 0px;
+}
+
+
+.section-info {
+  text-align: center;
+  .section-title {
+    font-weight: 700;
+    margin-bottom: 1rem;
+  }
+
+  &__section-subtitle {
+    margin-top: 1.5rem;
+    color: #5c5c5c;
+  }
 }
