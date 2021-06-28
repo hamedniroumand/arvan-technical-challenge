@@ -1,5 +1,15 @@
-require("svg-url-loader!../../public/images/city.svg")
-require("svg-url-loader!../../public/images/city-back.svg")
+import {responsiveMode} from "./home-modules/registration-form";
+
+require("svg-url-loader!../../public/images/city.svg");
+require("svg-url-loader!../../public/images/city-back.svg");
+
+const currentWindowWidth = window.innerWidth;
+
+responsiveMode(currentWindowWidth);
+
+window.addEventListener("resize", (e) => {
+    responsiveMode(window.innerWidth)
+})
 
 const header = document.querySelector('header');
 const front = document.querySelector('.header__footer--front');
@@ -70,8 +80,32 @@ const removeActiveClassFromTabFamily = (type) => {
     });
 }
 
+document.addEventListener("click", () => {
+    document.querySelectorAll(".custom-select").forEach(customSelect => {
+        customSelect.classList.remove("active")
+    });
+})
 
+Array.from(document.querySelectorAll('.custom-select__item input')).forEach(element => {
+    element.addEventListener('change', (e) => {
+        e.target.closest('.custom-select').querySelector("p").innerHTML = e.target.nextSibling.nextElementSibling.innerHTML;
+        e.target.closest('.custom-select').classList.remove('active')
+    });
+});
 
+document.querySelectorAll(".custom-select").forEach(customSelect => {
+    customSelect.addEventListener("click", (event) => {
+        event.stopPropagation();
+        if(!event.target.classList.contains('custom-select__item')) {
+            event.target.closest(".custom-select").classList.toggle("active");
+        }
+    });
+});
 
-
+Array.from(document.querySelectorAll(".custom-file")).forEach(label => {
+    label.nextSibling.nextElementSibling.addEventListener("change", event => {
+        label.innerHTML = event.target.files[0].name;
+        label.classList.add("selected")
+    })
+})
 

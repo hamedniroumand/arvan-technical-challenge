@@ -1,20 +1,25 @@
 html, html * {
     font-size: $font-size;
     line-height: $font-size * 1.6;
+    font-family: $font-family;
     @include responsive(sm) {
         font-size: 12px;
-
         p, .paragraph {
             font-size: 14px;
             line-height: 14px * 2;
         }
     }
+}
 
+*::placeholder {
+    font-family: $font-family;
+    color: #8da3c2;
+    text-align: right;
 }
 
 body {
     box-sizing: border-box;
-    font-family: "iranyekan";
+    font-family: $font-family;
     color: #6A7D9B;
 }
 
@@ -29,4 +34,7 @@ a {
 
 img {
     pointer-events: none;
+}
+.ltr {
+    direction: ltr;
 }

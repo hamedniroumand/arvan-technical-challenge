@@ -157,7 +157,7 @@ module.exports = (env, {mode}) => {
                     nodir: true,
                 }),
                 safelist: () => ({
-                    standard: ['active', 'deactivated'],
+                    standard: ['active', 'deactivated', 'selected'],
                     deep: [],
                     greedy: [],
                 }),

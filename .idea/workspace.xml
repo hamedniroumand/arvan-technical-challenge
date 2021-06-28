@@ -2,41 +2,23 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="06e2824d-f201-4572-8710-27039a7b4fdd" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/data.json" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/helpers/dynamic-include.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/public/images/author.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/public/images/city-back.svg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/resources/scss/components/_expand-arrow.scss" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/resources/scss/components/_icon-box.scss" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/resources/scss/components/_list-style.scss" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/resources/scss/components/_meeting-structure.scss" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/resources/scss/components/_projects-card.scss" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/resources/scss/pages/_home.scss" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/resources/scss/pages/_index.scss" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/view/components/icon-box.hbs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/view/components/meeting-structure/meeting-structure.hbs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/view/components/projects/projects.hbs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/view/components/projects/tabs.hbs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/view/components/svg/arrow-down.hbs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/view/components/svg/arrow-up-circle.hbs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/view/components/svg/code.hbs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/view/components/svg/dollar.hbs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/view/components/svg/edit.hbs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/view/components/svg/file-plus.hbs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/view/components/svg/github.hbs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/view/components/svg/users.hbs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/resources/js/home-modules/registration-form.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/resources/scss/components/_form.scss" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/resources/scss/components/_notice.scss" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/resources/scss/components/_register-form.scss" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/view/components/register-form/register-form.hbs" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/resources/js/home-page.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/resources/js/home-page.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/resources/scss/abstracs/_variables.scss" beforeDir="false" afterPath="$PROJECT_DIR$/src/resources/scss/abstracs/_variables.scss" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/resources/scss/base/_base.scss" beforeDir="false" afterPath="$PROJECT_DIR$/src/resources/scss/base/_base.scss" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/resources/scss/base/_typography.scss" beforeDir="false" afterPath="$PROJECT_DIR$/src/resources/scss/base/_typography.scss" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/resources/scss/components/_button.scss" beforeDir="false" afterPath="$PROJECT_DIR$/src/resources/scss/components/_button.scss" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/resources/scss/components/_expand-arrow.scss" beforeDir="false" afterPath="$PROJECT_DIR$/src/resources/scss/components/_expand-arrow.scss" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/resources/scss/components/_index.scss" beforeDir="false" afterPath="$PROJECT_DIR$/src/resources/scss/components/_index.scss" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/resources/scss/components/_meeting-structure.scss" beforeDir="false" afterPath="$PROJECT_DIR$/src/resources/scss/components/_meeting-structure.scss" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/resources/scss/components/_navbar.scss" beforeDir="false" afterPath="$PROJECT_DIR$/src/resources/scss/components/_navbar.scss" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/resources/scss/layouts/_header.scss" beforeDir="false" afterPath="$PROJECT_DIR$/src/resources/scss/layouts/_header.scss" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/resources/scss/main.scss" beforeDir="false" afterPath="$PROJECT_DIR$/src/resources/scss/main.scss" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/resources/scss/utilities/_index.scss" beforeDir="false" afterPath="$PROJECT_DIR$/src/resources/scss/utilities/_index.scss" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/view/components/header/index.hbs" beforeDir="false" afterPath="$PROJECT_DIR$/src/view/components/header/header.hbs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/view/components/header/navbar.hbs" beforeDir="false" afterPath="$PROJECT_DIR$/src/view/components/header/navbar.hbs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/resources/scss/pages/_home.scss" beforeDir="false" afterPath="$PROJECT_DIR$/src/resources/scss/pages/_home.scss" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/view/components/projects/projects.hbs" beforeDir="false" afterPath="$PROJECT_DIR$/src/view/components/projects/projects.hbs" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/view/pages/index.hbs" beforeDir="false" afterPath="$PROJECT_DIR$/src/view/pages/index.hbs" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/webpack.config.js" beforeDir="false" afterPath="$PROJECT_DIR$/webpack.config.js" afterDir="false" />
     </list>
@@ -44,6 +26,13 @@
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
     <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="JavaScript File" />
+      </list>
+    </option>
   </component>
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
@@ -90,7 +79,12 @@
       <recent name="C:\Users\Hamed\Documents\programming\works\arvan-challenge\src\resources\scss\vendor\bootstrap" />
     </key>
   </component>
-  <component name="RunManager" selected="npm.build:prod">
+  <component name="RunAnythingCache">
+    <option name="myCommands">
+      <command value="child" />
+    </option>
+  </component>
+  <component name="RunManager" selected="npm.serve">
     <configuration name="build:prod" type="js.build_tools.npm" temporary="true" nameIsGenerated="true">
       <package-json value="$PROJECT_DIR$/package.json" />
       <command value="run" />
@@ -123,8 +117,8 @@
     </configuration>
     <recent_temporary>
       <list>
-        <item itemvalue="npm.build:prod" />
         <item itemvalue="npm.serve" />
+        <item itemvalue="npm.build:prod" />
         <item itemvalue="npm.watch" />
       </list>
     </recent_temporary>
@@ -138,7 +132,11 @@
       <option name="presentableId" value="Default" />
       <updated>1624648486038</updated>
       <workItem from="1624648487280" duration="15303000" />
-      <workItem from="1624687455826" duration="37113000" />
+      <workItem from="1624687455826" duration="37931000" />
+      <workItem from="1624771763999" duration="1211000" />
+      <workItem from="1624813277488" duration="2753000" />
+      <workItem from="1624862929748" duration="18527000" />
+      <workItem from="1624893974486" duration="3578000" />
     </task>
     <servers />
   </component>

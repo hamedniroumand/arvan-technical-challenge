@@ -33,17 +33,14 @@
 
     &__left {
       .btn {
-        height: $btn-height;
-        display: flex;
-        justify-content: center;
-        align-items: center;
-
+        height: 40px;
         &:not(:last-child) {
           margin-left: 1.8rem;
         }
       }
       .btn-primary:not(.btn-icon) {
         width: 130px;
+        border-radius: 50px;
       }
       .btn-icon {
         width: $btn-height;

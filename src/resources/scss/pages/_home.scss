@@ -1,12 +1,13 @@
 section.projects {
   background-color: $secondary-color-light;
-  padding: 9rem 0;
+  padding: $sections-padding;
 
   .project-info {
     text-align: center;
     margin-bottom: 3rem;
     &__section-title {
       font-weight: 700;
+
     }
 
     &__section-subtitle {
@@ -18,5 +19,18 @@ section.projects {
 
 section.meeting-structure {
   background-color: #EEF2F7;
-  padding: 9rem 0;
+  padding: $sections-padding;
+}
+
+section.register-form {
+  padding: $sections-padding;
+  background-color: white;
+
+  .wrapper {
+    width: 80%;
+    margin: 0 auto;
+    @include responsive(md) {
+      width: 100%;
+    }
+  }
 }
