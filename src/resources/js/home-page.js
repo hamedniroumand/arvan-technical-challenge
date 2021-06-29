@@ -30,15 +30,16 @@ document.addEventListener( 'DOMContentLoaded', function () {
             pagination: false,
         }).mount();
 
-
+        document.querySelector(".success-projects-slider").classList.remove("splide")
+    }
+    else {
+        new Splide('#success-projects-slider', {
+            direction: "rtl",
+            perPage: 7,
+            pagination: false,
+        }).mount();
     }
 
-    new Splide('#success-projects-slider', {
-        direction: "rtl",
-        perPage: 7,
-        // autoWidth: true,
-        pagination: false,
-    }).mount();
 });
 
 window.addEventListener("resize", (e) => {

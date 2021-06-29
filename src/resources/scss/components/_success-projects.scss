@@ -2,13 +2,25 @@
   .success-projects-slider {
     .item-wrapper {
       text-align: center;
-
       svg {
         &:hover {
           path {
             transition: all .5s;
             fill: $primary-color;
           }
+        }
+      }
+    }
+
+    .splide__list {
+      @include responsive(sm) {
+        display: flex;
+        flex-wrap: wrap;
+        width: 100%;
+        justify-content: space-evenly;
+
+        .item-wrapper {
+          margin: 1rem;
         }
       }
     }

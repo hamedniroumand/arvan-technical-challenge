@@ -2,20 +2,9 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="06e2824d-f201-4572-8710-27039a7b4fdd" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/src/resources/scss/components/_success-projects.scss" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/view/components/success-projects/success-projects.hbs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/view/components/svg/logo/logo-01.hbs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/view/components/svg/logo/logo-02.hbs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/view/components/svg/logo/logo-03.hbs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/view/components/svg/logo/logo-04.hbs" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/resources/js/home-page.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/resources/js/home-page.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/resources/scss/base/_base.scss" beforeDir="false" afterPath="$PROJECT_DIR$/src/resources/scss/base/_base.scss" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/resources/scss/components/_index.scss" beforeDir="false" afterPath="$PROJECT_DIR$/src/resources/scss/components/_index.scss" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/resources/scss/pages/_home.scss" beforeDir="false" afterPath="$PROJECT_DIR$/src/resources/scss/pages/_home.scss" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/resources/scss/vendor/_index.scss" beforeDir="false" afterPath="$PROJECT_DIR$/src/resources/scss/vendor/_index.scss" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/view/pages/index.hbs" beforeDir="false" afterPath="$PROJECT_DIR$/src/view/pages/index.hbs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/webpack.config.js" beforeDir="false" afterPath="$PROJECT_DIR$/webpack.config.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/resources/scss/components/_success-projects.scss" beforeDir="false" afterPath="$PROJECT_DIR$/src/resources/scss/components/_success-projects.scss" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -133,7 +122,7 @@
       <workItem from="1624813277488" duration="2753000" />
       <workItem from="1624862929748" duration="18527000" />
       <workItem from="1624893974486" duration="12740000" />
-      <workItem from="1624941763880" duration="5990000" />
+      <workItem from="1624941763880" duration="6335000" />
     </task>
     <servers />
   </component>
