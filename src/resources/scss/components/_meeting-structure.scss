@@ -109,4 +109,26 @@
 
     }
   }
+
+  #meeting-tab-mobile {
+    display: none;
+    margin-top: 2rem;
+    padding: 0 15px;
+    ul {
+      li {
+        background: #D4DFEE;
+        margin-left: 1rem;
+        padding: .6rem 2.5rem;
+        border-radius: 10px;
+
+        p {
+          font-weight: bold;
+        }
+      }
+      li.active {
+        background-color: $primary-color;
+        color: white;
+      }
+    }
+  }
 }

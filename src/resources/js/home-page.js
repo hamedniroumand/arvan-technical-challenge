@@ -1,4 +1,5 @@
-import {responsiveMode} from "./home-modules/registration-form";
+import Splide from "@splidejs/splide"
+import {responsiveMode, breakPoints} from "./home-modules/registration-form";
 
 require("svg-url-loader!../../public/images/city.svg");
 require("svg-url-loader!../../public/images/city-back.svg");
@@ -6,6 +7,30 @@ require("svg-url-loader!../../public/images/city-back.svg");
 const currentWindowWidth = window.innerWidth;
 
 responsiveMode(currentWindowWidth);
+
+document.addEventListener( 'DOMContentLoaded', function () {
+    if(currentWindowWidth < breakPoints.sm) {
+        document.querySelector(".projects .tabs").style.display = "none"
+        document.querySelector(".project-tabs-mobile").style.display = "block"
+        new Splide('#project-tab-mobile', {
+            direction: "rtl",
+            perPage: 2,
+            arrows: false,
+            autoWidth: true,
+            pagination: false
+        }).mount();
+
+        document.querySelector(".meeting-structure .tabs").style.display = "none"
+        document.querySelector("#meeting-tab-mobile").style.display = "block"
+        new Splide('#meeting-tab-mobile', {
+            direction: "rtl",
+            perPage: 1,
+            arrows: false,
+            autoWidth: true,
+            pagination: false,
+        }).mount();
+    }
+});
 
 window.addEventListener("resize", (e) => {
     responsiveMode(window.innerWidth)
@@ -57,8 +82,7 @@ Array.from(document.querySelectorAll('.expand-description')).forEach((element, i
 
 Array.from(document.querySelectorAll(".tab")).forEach(element => {
     element.addEventListener("click", (event) => {
-
-        const id = element.getAttribute("id");
+        const id = element.getAttribute("data-id");
         const type = element.getAttribute("data-type");
         const target = document.querySelector(`[data-target='#${id}'][data-type='${type}']`);
         const targetFamily = Array.from(document.querySelectorAll(`.tab-target[data-type='${type}']`))

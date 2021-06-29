@@ -10,9 +10,14 @@ span.expand-description {
   justify-content: center;
   align-items: center;
   cursor: pointer;
+  position: relative;
 
   svg {
-    transform: rotate(90deg);
+    transform: translate(-50%, -50%) rotate(90deg);
+    position: absolute;
+    left: 50%;
+    top: 50%;
+
   }
 }
 
@@ -20,7 +25,8 @@ span.expand-description {
   background-color: $primary-color;
   transition: transform 0.5s;
   svg {
-    transform: rotate(270deg);
+    transform: translate(-50%, -50%) rotate(270deg);
+    top: 56%;
     path {
       stroke: white;
     }

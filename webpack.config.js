@@ -190,10 +190,5 @@ module.exports = (env, {mode}) => {
         ]
     );
 
-    if(!isDevelopment) {
-        const object = config.module.rules.find(m => m.test == /\.css$/);
-        console.log(object)
-    }
-
     return config;
 };

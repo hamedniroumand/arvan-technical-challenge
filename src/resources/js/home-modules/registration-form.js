@@ -43,5 +43,6 @@ const responsiveMode = (currentWindowWidth) => {
 }
 
 export {
-    responsiveMode
+    responsiveMode,
+    breakPoints
 }
