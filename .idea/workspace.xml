@@ -3,8 +3,23 @@
   <component name="ChangeListManager">
     <list default="true" id="06e2824d-f201-4572-8710-27039a7b4fdd" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/resources/js/app.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/resources/js/app.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/resources/js/home-page.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/resources/js/home-page.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/resources/scss/components/_success-projects.scss" beforeDir="false" afterPath="$PROJECT_DIR$/src/resources/scss/components/_success-projects.scss" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/resources/scss/base/_typography.scss" beforeDir="false" afterPath="$PROJECT_DIR$/src/resources/scss/base/_typography.scss" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/resources/scss/components/_form.scss" beforeDir="false" afterPath="$PROJECT_DIR$/src/resources/scss/components/_form.scss" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/resources/scss/components/_meeting-structure.scss" beforeDir="false" afterPath="$PROJECT_DIR$/src/resources/scss/components/_meeting-structure.scss" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/resources/scss/components/_navbar.scss" beforeDir="false" afterPath="$PROJECT_DIR$/src/resources/scss/components/_navbar.scss" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/resources/scss/components/_projects-card.scss" beforeDir="false" afterPath="$PROJECT_DIR$/src/resources/scss/components/_projects-card.scss" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/resources/scss/components/_register-form.scss" beforeDir="false" afterPath="$PROJECT_DIR$/src/resources/scss/components/_register-form.scss" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/resources/scss/vendor/_index.scss" beforeDir="false" afterPath="$PROJECT_DIR$/src/resources/scss/vendor/_index.scss" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/view/components/header/header.hbs" beforeDir="false" afterPath="$PROJECT_DIR$/src/view/components/header/header.hbs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/view/components/header/navbar.hbs" beforeDir="false" afterPath="$PROJECT_DIR$/src/view/components/header/navbar.hbs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/view/components/meeting-structure/meeting-structure.hbs" beforeDir="false" afterPath="$PROJECT_DIR$/src/view/components/meeting-structure/meeting-structure.hbs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/view/components/projects/projects.hbs" beforeDir="false" afterPath="$PROJECT_DIR$/src/view/components/projects/projects.hbs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/view/components/projects/tabs.hbs" beforeDir="false" afterPath="$PROJECT_DIR$/src/view/components/projects/tabs.hbs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/view/components/register-form/register-form.hbs" beforeDir="false" afterPath="$PROJECT_DIR$/src/view/components/register-form/register-form.hbs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/view/pages/index.hbs" beforeDir="false" afterPath="$PROJECT_DIR$/src/view/pages/index.hbs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/webpack.config.js" beforeDir="false" afterPath="$PROJECT_DIR$/webpack.config.js" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -69,7 +84,7 @@
       <command value="child" />
     </option>
   </component>
-  <component name="RunManager" selected="npm.serve">
+  <component name="RunManager" selected="npm.build:prod">
     <configuration name="build:prod" type="js.build_tools.npm" temporary="true" nameIsGenerated="true">
       <package-json value="$PROJECT_DIR$/package.json" />
       <command value="run" />
@@ -102,8 +117,8 @@
     </configuration>
     <recent_temporary>
       <list>
-        <item itemvalue="npm.serve" />
         <item itemvalue="npm.build:prod" />
+        <item itemvalue="npm.serve" />
         <item itemvalue="npm.watch" />
       </list>
     </recent_temporary>
@@ -122,7 +137,8 @@
       <workItem from="1624813277488" duration="2753000" />
       <workItem from="1624862929748" duration="18527000" />
       <workItem from="1624893974486" duration="12740000" />
-      <workItem from="1624941763880" duration="6335000" />
+      <workItem from="1624941763880" duration="9276000" />
+      <workItem from="1624979953275" duration="5636000" />
     </task>
     <servers />
   </component>

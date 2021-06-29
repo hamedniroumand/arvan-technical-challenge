@@ -21,6 +21,10 @@
       border: none !important;
     }
 
+    * {
+      font-size: 1rem;
+    }
+
     ul {
       display: flex;
       justify-content: space-between;
@@ -114,6 +118,9 @@
     display: none;
     margin-top: 2rem;
     padding: 0 15px;
+    * {
+      font-size: 1.1rem;
+    }
     ul {
       li {
         background: #D4DFEE;

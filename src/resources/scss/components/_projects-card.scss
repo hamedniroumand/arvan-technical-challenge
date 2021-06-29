@@ -7,6 +7,11 @@ section.projects {
       overflow-x: auto;
       margin-bottom: 1rem;
     }
+
+    * {
+      font-size: 1rem;
+    }
+
     ul {
       display: flex;
       @include responsive(sm) {
@@ -88,6 +93,7 @@ section.projects {
           justify-content: space-between;
 
           .project-title {
+            font-size: 1rem;
             @include responsive(sm) {
               max-width: 75%;
               width: 100%;
@@ -167,7 +173,7 @@ section.projects {
                 align-items: flex-end;
               }
 
-              h3 {
+              .description-heading {
                 font-weight: 700;
                 font-size: 1.5rem;
                 margin-right: 1.5rem;
@@ -291,6 +297,9 @@ section.projects {
   .project-tabs-mobile {
     display: none;
     margin: 1.5rem 0;
+    * {
+      font-size: 1.1rem;
+    }
     ul {
       li {
         background: rgba(0, 186, 186, 0.15);

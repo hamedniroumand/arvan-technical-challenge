@@ -13,7 +13,6 @@
       padding: 1.5rem;
       border-radius: 12px;
       position: relative;
-      overflow-x: clip;
 
       &:not(:last-child) {
         margin-bottom: 1.5rem;
@@ -21,17 +20,22 @@
 
       &:after {
         content: "";
-        width: 10px;
+        width: 6px;
         height: 40px;
         background-color: $primary-color;
-        border-radius: 5px;
-        right: -5px;
+        right: 1px;
         top: 10px;
         position: absolute;
+        border-top-left-radius: 5px;
+        border-bottom-left-radius: 5px;
       }
 
       .box-title {
         margin-bottom: 1.51rem;
+
+        * {
+          font-size: 1.2rem;
+        }
       }
     }
   }

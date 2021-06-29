@@ -1,41 +1,43 @@
-<div class="container">
-    <div class="row">
-        <div class="navbar">
-            <div class="navbar__right">
-                <div class="navbar__logo">
-                    <a href="/">{{> svg/logo }}</a>
+<nav class="main-nav">
+    <div class="container">
+        <div class="row">
+            <div class="navbar">
+                <div class="navbar__right">
+                    <div class="navbar__logo">
+                        <a href="/">{{> svg/logo }}</a>
+                    </div>
+                    <ul class="navbar__items">
+                        <li class="navbar__item">
+                            <a href="#">محصولات</a>
+                        </li>
+                        <li class="navbar__item">
+                            <a href="#">بازارچه</a>
+                        </li>
+                        <li class="navbar__item">
+                            <a href="#">مستندات</a>
+                        </li>
+                        <li class="navbar__item">
+                            <a href="#">زیست بوم</a>
+                        </li>
+                        <li class="navbar__item">
+                            <a href="#">قیمت</a>
+                        </li>
+                    </ul>
                 </div>
-                <ul class="navbar__items">
-                    <li class="navbar__item">
-                        <a href="#">محصولات</a>
-                    </li>
-                    <li class="navbar__item">
-                        <a href="#">بازارچه</a>
-                    </li>
-                    <li class="navbar__item">
-                        <a href="#">مستندات</a>
-                    </li>
-                    <li class="navbar__item">
-                        <a href="#">زیست بوم</a>
-                    </li>
-                    <li class="navbar__item">
-                        <a href="#">قیمت</a>
-                    </li>
-                </ul>
-            </div>
-            <div class="navbar__left">
-                <a href="#" class="btn btn-secondary">ورود</a>
-                <a href="#" class="btn btn-primary">ثبت نام</a>
-                <a href="#" class="btn btn btn-secondary">فارسی <span>{{> svg/global }}</span></a>
-                <button class="btn btn-primary btn-icon">{{> svg/call }}</button>
+                <div class="navbar__left">
+                    <a href="#" class="btn btn-secondary">ورود</a>
+                    <a href="#" class="btn btn-primary">ثبت نام</a>
+                    <a href="#" class="btn btn btn-secondary">فارسی <span>{{> svg/global }}</span></a>
+                    <button class="btn btn-primary btn-icon">{{> svg/call }}</button>
+                </div>
             </div>
         </div>
     </div>
-</div>
 
-<div class="navbar__mobile">
-    <div class="navbar__logo">
-        <a href="/">{{> svg/logo }}</a>
-    </div>
+    <div class="navbar__mobile">
+        <div class="navbar__logo">
+            <a href="/">{{> svg/logo }}</a>
+        </div>
         <span>{{> svg/menu }}</span>
-</div>
+    </div>
+</nav>
