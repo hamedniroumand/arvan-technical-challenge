@@ -29,7 +29,16 @@ document.addEventListener( 'DOMContentLoaded', function () {
             autoWidth: true,
             pagination: false,
         }).mount();
+
+
     }
+
+    new Splide('#success-projects-slider', {
+        direction: "rtl",
+        perPage: 7,
+        // autoWidth: true,
+        pagination: false,
+    }).mount();
 });
 
 window.addEventListener("resize", (e) => {

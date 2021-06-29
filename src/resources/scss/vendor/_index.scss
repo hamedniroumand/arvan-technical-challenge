@@ -28,3 +28,26 @@
     max-width:1140px
   }
 }
+
+.splide__arrow[disabled] {
+  display: none;
+}
+.splide__arrow {
+  transition: all 0.3s;
+  &:hover {
+    background-color: $primary-color;
+    svg {
+      transition: all 0.3s;
+      path {
+        fill: white;
+      }
+    }
+  }
+}
+
+.splide--rtl > .splide__arrows .splide__arrow--next, .splide--rtl > .splide__track > .splide__arrows .splide__arrow--next {
+  left: -1rem !important;
+}
+.splide--rtl > .splide__arrows .splide__arrow--prev, .splide--rtl > .splide__track > .splide__arrows .splide__arrow--prev {
+  right: -1rem !important;
+}

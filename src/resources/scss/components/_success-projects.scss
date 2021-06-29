@@ -1,0 +1,16 @@
+.success-projects {
+  .success-projects-slider {
+    .item-wrapper {
+      text-align: center;
+
+      svg {
+        &:hover {
+          path {
+            transition: all .5s;
+            fill: $primary-color;
+          }
+        }
+      }
+    }
+  }
+}
