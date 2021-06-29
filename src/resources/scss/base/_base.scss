@@ -2,6 +2,7 @@ html, html * {
     font-size: $font-size;
     line-height: $font-size * 1.6;
     font-family: $font-family;
+    user-select: none;
     @include responsive(sm) {
         font-size: 12px;
         p, .paragraph {
@@ -13,7 +14,7 @@ html, html * {
 
 *::placeholder {
     font-family: $font-family;
-    color: #8da3c2;
+    color: $text-color;
     text-align: right;
 }
 

@@ -1,5 +1,4 @@
 var expandedIndex = [];
-let oldScroll = 0;
 
 Array.from(document.querySelectorAll('.expand-description')).forEach((element, index) => {
     element.addEventListener("click", (event) => {
@@ -84,14 +83,16 @@ const onDocumentScrolled = () => {
     const headerHeight = header.clientHeight;
     const navHeight = navbar.clientHeight;
     const topOfWindow = window.scrollY;
-    // console.log({header, navbar, navbar})
+
     if (topOfWindow > headerHeight) {
         if(!navbar.classList.contains("fixed")) navbar.classList.add("fixed")
     } else {
-        if(topOfWindow < navHeight) {
+        if(topOfWindow === 0) {
             if(navbar.classList.contains("fixed")) navbar.classList.remove("fixed")
         }
     }
 }
+
+onDocumentScrolled();
 
 document.addEventListener("scroll", onDocumentScrolled)

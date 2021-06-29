@@ -43,6 +43,23 @@ section.projects {
           overflow-y: hidden;
           margin-left: 0 !important;
         }
+
+        .tab-icon {
+          position: relative;
+          display: block;
+          width: 15px;
+          margin-left: 0.6rem;
+          svg {
+            position: absolute;
+            top: 50%;
+            transform: translateY(-50%);
+            left: 0;
+            width: 15px;
+            path {
+              stroke: $text-color;
+            }
+          }
+        }
       }
 
       li.active {

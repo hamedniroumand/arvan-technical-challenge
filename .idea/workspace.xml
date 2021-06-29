@@ -2,24 +2,19 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="06e2824d-f201-4572-8710-27039a7b4fdd" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/src/resources/js/home-modules/header.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/resources/js/home-modules/responsive-sliders.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/view/components/svg/loader.hbs" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/resources/js/app.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/resources/js/app.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/resources/js/home-modules/registration-form.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/resources/js/home-modules/registration-form.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/resources/js/home-page.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/resources/js/home-page.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/resources/scss/base/_typography.scss" beforeDir="false" afterPath="$PROJECT_DIR$/src/resources/scss/base/_typography.scss" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/resources/scss/components/_form.scss" beforeDir="false" afterPath="$PROJECT_DIR$/src/resources/scss/components/_form.scss" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/resources/scss/components/_meeting-structure.scss" beforeDir="false" afterPath="$PROJECT_DIR$/src/resources/scss/components/_meeting-structure.scss" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/resources/scss/components/_navbar.scss" beforeDir="false" afterPath="$PROJECT_DIR$/src/resources/scss/components/_navbar.scss" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/resources/scss/abstracs/_variables.scss" beforeDir="false" afterPath="$PROJECT_DIR$/src/resources/scss/abstracs/_variables.scss" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/resources/scss/base/_base.scss" beforeDir="false" afterPath="$PROJECT_DIR$/src/resources/scss/base/_base.scss" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/resources/scss/components/_categories.scss" beforeDir="false" afterPath="$PROJECT_DIR$/src/resources/scss/components/_categories.scss" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/resources/scss/components/_projects-card.scss" beforeDir="false" afterPath="$PROJECT_DIR$/src/resources/scss/components/_projects-card.scss" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/resources/scss/components/_register-form.scss" beforeDir="false" afterPath="$PROJECT_DIR$/src/resources/scss/components/_register-form.scss" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/resources/scss/vendor/_index.scss" beforeDir="false" afterPath="$PROJECT_DIR$/src/resources/scss/vendor/_index.scss" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/view/components/header/header.hbs" beforeDir="false" afterPath="$PROJECT_DIR$/src/view/components/header/header.hbs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/view/components/header/navbar.hbs" beforeDir="false" afterPath="$PROJECT_DIR$/src/view/components/header/navbar.hbs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/view/components/meeting-structure/meeting-structure.hbs" beforeDir="false" afterPath="$PROJECT_DIR$/src/view/components/meeting-structure/meeting-structure.hbs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/view/components/projects/projects.hbs" beforeDir="false" afterPath="$PROJECT_DIR$/src/view/components/projects/projects.hbs" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/view/components/projects/tabs.hbs" beforeDir="false" afterPath="$PROJECT_DIR$/src/view/components/projects/tabs.hbs" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/view/components/register-form/register-form.hbs" beforeDir="false" afterPath="$PROJECT_DIR$/src/view/components/register-form/register-form.hbs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/view/pages/index.hbs" beforeDir="false" afterPath="$PROJECT_DIR$/src/view/pages/index.hbs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/webpack.config.js" beforeDir="false" afterPath="$PROJECT_DIR$/webpack.config.js" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -138,7 +133,7 @@
       <workItem from="1624862929748" duration="18527000" />
       <workItem from="1624893974486" duration="12740000" />
       <workItem from="1624941763880" duration="9276000" />
-      <workItem from="1624979953275" duration="5636000" />
+      <workItem from="1624979953275" duration="10763000" />
     </task>
     <servers />
   </component>

@@ -18,7 +18,7 @@ const toggleDisplay = (elements, display, isSingle = false) => {
 }
 
 
-const responsiveMode = (currentWindowWidth) => {
+const changeRegisterFormToResponsiveMode = (currentWindowWidth) => {
 
     const labels = document.querySelectorAll(".select-group > .label");
 
@@ -43,6 +43,6 @@ const responsiveMode = (currentWindowWidth) => {
 }
 
 export {
-    responsiveMode,
+    changeRegisterFormToResponsiveMode,
     breakPoints
 }

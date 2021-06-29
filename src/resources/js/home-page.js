@@ -1,36 +1,25 @@
 import Splide from "@splidejs/splide"
-import {responsiveMode, breakPoints} from "./home-modules/registration-form";
+import {changeRegisterFormToResponsiveMode, breakPoints} from "./home-modules/registration-form";
+import {
+    mountProjectsResponsiveSlider,
+    mountMeetingResponsiveSlider
+} from "./home-modules/responsive-sliders"
+import {onMouseHover} from "./home-modules/header";
 
 require("svg-url-loader!../../public/images/city.svg");
 require("svg-url-loader!../../public/images/city-back.svg");
 
 const currentWindowWidth = window.innerWidth;
 
-responsiveMode(currentWindowWidth);
+changeRegisterFormToResponsiveMode(currentWindowWidth);
 
 
 const onPageLoaded = () => {
+
+    mountProjectsResponsiveSlider(currentWindowWidth);
+    mountMeetingResponsiveSlider(currentWindowWidth)
+
     if(currentWindowWidth < breakPoints.sm) {
-        document.querySelector(".projects .tabs").style.display = "none"
-        document.querySelector(".project-tabs-mobile").style.display = "block"
-        new Splide('#project-tab-mobile', {
-            direction: "rtl",
-            perPage: 2,
-            arrows: false,
-            autoWidth: true,
-            pagination: false
-        }).mount();
-
-        document.querySelector(".meeting-structure .tabs").style.display = "none"
-        document.querySelector("#meeting-tab-mobile").style.display = "block"
-        new Splide('#meeting-tab-mobile', {
-            direction: "rtl",
-            perPage: 1,
-            arrows: false,
-            autoWidth: true,
-            pagination: false,
-        }).mount();
-
         document.querySelector(".success-projects-slider").classList.remove("splide")
     }
     else {
@@ -45,7 +34,11 @@ const onPageLoaded = () => {
 document.addEventListener( 'DOMContentLoaded', onPageLoaded);
 
 window.addEventListener("resize", (e) => {
-    responsiveMode(window.innerWidth)
+    const windowWidth = window.innerWidth;
+
+    changeRegisterFormToResponsiveMode(windowWidth);
+    mountProjectsResponsiveSlider(windowWidth);
+    mountMeetingResponsiveSlider(windowWidth)
 })
 
 const header = document.querySelector('header');
@@ -53,17 +46,7 @@ const front = document.querySelector('.header__footer--front');
 const back = document.querySelector('.header__footer--back');
 
 header.addEventListener("mousemove", (event) => {
-    if (!front) return;
-
-    const clientX = event.clientX; // 1600px
-    const clientY = event.clientY;
-
-    const finalX = clientX / 100;
-    const finalY = clientY / 45;
-
-    front.style.backgroundPositionX = `-${finalX}px`;
-    front.style.backgroundPositionY = `${finalY}px`;
-    back.style.backgroundPositionX = `${finalX}px`;
+    onMouseHover(event, front, back)
 });
 
 

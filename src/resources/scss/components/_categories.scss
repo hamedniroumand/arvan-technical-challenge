@@ -1,5 +1,14 @@
 .categories {
 
+  .section-info {
+    .section-subtitle {
+      margin: 0 2.5rem;
+      @include responsive(md) {
+        margin: 0;
+      }
+    }
+  }
+
   .category-col {
     margin-bottom: 1rem;
   }
