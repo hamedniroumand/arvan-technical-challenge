@@ -84,8 +84,24 @@
 
 .navbar__mobile {
   display: none;
+  .navbar__logo {
+    a {
+        height: 2.3rem;
+      display: block;
+      svg {
+        height: 100%;
+      }
+    }
+
+    span {
+      svg {
+        height: 100%;
+        display: block;
+      }
+    }
+  }
   @include responsive(lg) {
-    padding: 1rem;
+    padding: 0.8rem;
     display: flex;
     justify-content: space-between;
     align-items: center;

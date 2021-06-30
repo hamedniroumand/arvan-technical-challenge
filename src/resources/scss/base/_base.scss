@@ -12,6 +12,10 @@ html, html * {
     }
 }
 
+input {
+    user-select: unset;
+}
+
 *::placeholder {
     font-family: $font-family;
     color: $text-color;

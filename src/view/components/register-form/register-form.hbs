@@ -14,26 +14,26 @@
                             <div class="input-col col-lg-6">
                                 <div class="input-group">
                                     <label class="label required" for="name">نام</label>
-                                    <input required class="input" id="name" placeholder="نام و نام خانوادگی" type="text">
+                                    <input data-label="نام و نام خانوادگی" required class="input" id="name" placeholder="نام و نام خانوادگی" type="text">
                                 </div>
                             </div>
                             <div class="input-col col-lg-6">
                                 <div class="input-group">
                                     <label class="label required" for="phone">تلفن</label>
-                                    <input required class="input" id="phone" type="number" placeholder="0952654484">
+                                    <input data-label="تلفن" required class="input" id="phone" type="number" placeholder="0952654484">
                                 </div>
                             </div>
                             <div class="input-col col-lg-6">
                                 <div class="input-group">
                                     <label class="label required" for="email">ایمیل</label>
-                                    <input required class="input ltr" id="email" type="email"
+                                    <input data-label="ایمیل" required class="input ltr" id="email" type="email"
                                            placeholder="example@email.com">
                                 </div>
                             </div>
                             <div class="input-col col-lg-6">
                                 <div class="input-group">
                                     <label class="label" for="company">نام شرکت</label>
-                                    <input class="input" id="company" type="text" placeholder="نام شرکت یا سازمان">
+                                    <input data-label="نام شرکت" class="input" id="company" type="text" placeholder="نام شرکت یا سازمان">
                                 </div>
                             </div>
                         </div>
@@ -46,7 +46,7 @@
                                     <div>
                                         <label class="label required" for="resume">رزومه</label>
                                         <label class="custom-file" for="resume"></label>
-                                        <input hidden class="input" id="resume" type="file">
+                                        <input data-label="رزومه" accept="application/pdf" hidden class="input" id="resume" type="file">
                                     </div>
                                     <small class="input-notice">حداکثر حجم مجاز فایل 1 مگابایت باشد</small>
                                     <small class="input-notice input-error"></small>
@@ -57,7 +57,7 @@
                                     <div>
                                         <label class="label" for="portfolio">پورتفولیو</label>
                                         <label class="custom-file" for="portfolio"></label>
-                                        <input hidden class="input" id="portfolio" type="file">
+                                        <input data-label="پورتفولیو" accept="application/pdf" hidden class="input" id="portfolio" type="file">
                                     </div>
                                     <small class="input-notice">حداکثر حجم مجاز فایل 1 مگابایت باشد</small>
                                     <small class="input-notice input-error"></small>
@@ -74,23 +74,23 @@
                                     <div class="custom-select">
                                         <p></p>
                                         <div class="custom-select__item">
-                                            <input name="type" value="1" type="radio" id="1">
+                                            <input data-label="نوع ابریار" name="type" value="1" type="radio" id="1">
                                             <label for="1">ابریار کوچ ابری</label>
                                         </div>
                                         <div class="custom-select__item">
-                                            <input name="type" value="2" type="radio" id="2">
+                                            <input data-label="نوع ابریار" name="type" value="2" type="radio" id="2">
                                             <label for="2">ابریار فنی</label>
                                         </div>
                                         <div class="custom-select__item">
-                                            <input name="type" value="3" type="radio" id="3">
+                                            <input data-label="نوع ابریار" name="type" value="3" type="radio" id="3">
                                             <label for="3">ابریار بازارچه</label>
                                         </div>
                                         <div class="custom-select__item">
-                                            <input name="type" value="4" type="radio" id="4">
+                                            <input data-label="نوع ابریار" name="type" value="4" type="radio" id="4">
                                             <label for="4">ابریار آموزش</label>
                                         </div>
                                         <div class="custom-select__item">
-                                            <input name="type" value="5" type="radio" id="5">
+                                            <input data-label="نوع ابریار" name="type" value="5" type="radio" id="5">
                                             <label for="5">ابریار فروش</label>
                                         </div>
                                     </div>
@@ -103,18 +103,18 @@
                                         <p></p>
                                         <div class="custom-select__item">
                                             <input name="level" value="level-1" type="radio" id="level-1">
-                                            <label for="level-1">سطح 1</label>
+                                            <label  data-label="سطح ابریار" for="level-1">سطح 1</label>
                                         </div>
                                         <div class="custom-select__item">
-                                            <input name="level" value="level-2" type="radio" id="level-2">
+                                            <input  data-label="سطح ابریار" name="level" value="level-2" type="radio" id="level-2">
                                             <label for="level-2">سطح 2</label>
                                         </div>
                                         <div class="custom-select__item">
-                                            <input name="level" value="level-3" type="radio" id="level-3">
+                                            <input  data-label="سطح ابریار" name="level" value="level-3" type="radio" id="level-3">
                                             <label for="level-3">سطح 3</label>
                                         </div>
                                         <div class="custom-select__item">
-                                            <input name="level" value="level-4" type="radio" id="level-4">
+                                            <input  data-label="سطح ابریار" name="level" value="level-4" type="radio" id="level-4">
                                             <label for="level-4">سطح 4</label>
                                         </div>
                                     </div>
@@ -123,7 +123,7 @@
                             <div class="col-lg-12">
                                 <div class="teaxtarea-group">
                                     <label class="label" for="description">توضیحات</label>
-                                    <textarea
+                                    <textarea  data-label="توضیحات"
                                             placeholder="در صورتی نیاز به توضیحات تکمیلی لطفا در این باکس برای ما یادداشت بگذارید"
                                             class="textarea custom-textarea" id="description" rows="6"></textarea>
                                 </div>
@@ -132,7 +132,14 @@
                     </div>
                     <div class="form-action">
                         <div class="notice notice--primary">پر کردن فیلدهایی که با ستاره مشخص شده ضروری است</div>
-                        <button disabled class="btn btn-primary">ثبت نام</button>
+                        <button type="submit" disabled class="btn btn-primary">ثبت نام</button>
+                    </div>
+                    <div class="form-result">
+                        <ul>
+                            <li>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Perspiciatis, quasi.</li>
+                            <li>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Perspiciatis, quasi.</li>
+                            <li>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Perspiciatis, quasi.</li>
+                        </ul>
                     </div>
                 </form>
             </div>

@@ -1,4 +1,7 @@
+import {breakPoints} from "./home-modules/registration-form";
+
 var expandedIndex = [];
+let scrollState = 0;
 
 Array.from(document.querySelectorAll('.expand-description')).forEach((element, index) => {
     element.addEventListener("click", (event) => {
@@ -77,6 +80,7 @@ const removeActiveClassFromTabFamily = (type) => {
     });
 }
 
+
 const onDocumentScrolled = () => {
     const header = document.querySelector(".main-header");
     const navbar = document.querySelector(".main-nav");
@@ -84,13 +88,26 @@ const onDocumentScrolled = () => {
     const navHeight = navbar.clientHeight;
     const topOfWindow = window.scrollY;
 
-    if (topOfWindow > headerHeight) {
-        if(!navbar.classList.contains("fixed")) navbar.classList.add("fixed")
+    if(window.innerWidth > breakPoints.lg) {
+        if (topOfWindow > headerHeight) {
+            if(!navbar.classList.contains("fixed")) navbar.classList.add("fixed")
+        } else {
+            if(topOfWindow === 0) {
+                if(navbar.classList.contains("fixed")) navbar.classList.remove("fixed")
+            }
+        }
     } else {
-        if(topOfWindow === 0) {
+        if (topOfWindow > headerHeight) {
+            if(topOfWindow > scrollState) { // scroll down
+                if(navbar.classList.contains("fixed")) navbar.classList.remove("fixed")
+            } else {
+                if(!navbar.classList.contains("fixed")) navbar.classList.add("fixed")
+            }
+        } else {
             if(navbar.classList.contains("fixed")) navbar.classList.remove("fixed")
         }
     }
+    scrollState = topOfWindow;
 }
 
 onDocumentScrolled();

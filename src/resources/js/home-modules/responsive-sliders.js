@@ -40,8 +40,27 @@ const mountMeetingResponsiveSlider = (currentWindowWidth) => {
     })()
 }
 
+var successProjectSlider = null;
+const mountSuccessProjectsSlider = (currentWindowWidth) => {
+    if(currentWindowWidth < breakPoints.sm) {
+       if(successProjectSlider) {
+           successProjectSlider.destroy();
+       }
+       document.querySelector(".success-projects-slider").classList.remove("splide")
+    }
+    else {
+        successProjectSlider = new Splide('#success-projects-slider', {
+            direction: "rtl",
+            perPage: 7,
+            pagination: false,
+        }).mount();
+        document.querySelector(".success-projects-slider").classList.add("splide")
+    }
+}
+
 
 export {
     mountProjectsResponsiveSlider,
-    mountMeetingResponsiveSlider
+    mountMeetingResponsiveSlider,
+    mountSuccessProjectsSlider,
 }

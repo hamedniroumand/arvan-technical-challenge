@@ -10,12 +10,12 @@
     margin-right: 0 !important;
   }
 
-  &:focus {
+  &:not(.invalid):focus {
     border-color: transparent;
     box-shadow: 0 0 3px rgba(136, 141, 147, 0.7);
     outline: none;
   }
-  &:focus-visible {
+  &:not(.invalid):focus-visible {
     border-color: transparent;
     box-shadow: 0 0 3px rgba(136, 141, 147, 0.7);
     outline: none;
@@ -225,7 +225,9 @@
 
 .custom-file.selected {
   border-color: $primary-color;
-
+  text-overflow: ellipsis;
+  overflow: hidden;
+  white-space: nowrap;
   &:after {
     border-color: $primary-color;
     color: white;
@@ -284,4 +286,32 @@
     transform: translateY(-50%);
     color: #6A7D9B;
   }
+}
+
+form {
+  .invalid {
+    border-color: $error-color;
+    &:after {
+      border-color: $error-color;
+      color: $error-color;
+    }
+  }
+}
+.form-result {
+  padding: 1rem;
+  margin-top: 1rem;
+  border-radius: 10px;
+  transform: scaleY(0);
+}
+.form-result-error {
+  transform: scaleY(1);
+  background: rgba($error-color, 0.05);
+  border: 1px solid darken($error-color, 25);
+  color: darken($error-color, 25);
+}
+.form-result-success {
+  transform: scaleY(1);
+  background: rgba($primary-color, 0.05);
+  border: 1px solid $primary-color-dark;
+  color: $primary-color-dark;
 }

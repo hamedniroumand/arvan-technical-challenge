@@ -17,6 +17,22 @@ const toggleDisplay = (elements, display, isSingle = false) => {
     }
 }
 
+const setSelectValue = (labels, ) => {
+   const checkedType = document.querySelector("input[name='type']:checked");
+   const checkedLevel = document.querySelector("input[name='level']:checked");
+
+   if(checkedType) {
+        checkedType.closest('.custom-select').querySelector('p').innerHTML = checkedType.nextSibling.nextSibling.innerHTML
+   }
+   if(checkedLevel) {
+       checkedLevel.closest('.custom-select').querySelector('p').innerHTML = checkedLevel.nextSibling.nextSibling.innerHTML
+   }
+}
+
+document.addEventListener("DOMContentLoaded", () => {
+    setSelectValue()
+})
+
 
 const changeRegisterFormToResponsiveMode = (currentWindowWidth) => {
 
