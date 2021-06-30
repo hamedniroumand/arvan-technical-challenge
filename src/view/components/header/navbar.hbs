@@ -7,21 +7,11 @@
                         <a href="/">{{> svg/logo }}</a>
                     </div>
                     <ul class="navbar__items">
-                        <li class="navbar__item">
-                            <a href="#">محصولات</a>
-                        </li>
-                        <li class="navbar__item">
-                            <a href="#">بازارچه</a>
-                        </li>
-                        <li class="navbar__item">
-                            <a href="#">مستندات</a>
-                        </li>
-                        <li class="navbar__item">
-                            <a href="#">زیست بوم</a>
-                        </li>
-                        <li class="navbar__item">
-                            <a href="#">قیمت</a>
-                        </li>
+                        {{> header/nav-item link="#" title="محصولات" }}
+                        {{> header/nav-item link="#" title="بازارچه" }}
+                        {{> header/nav-item link="#" title="مستندات" }}
+                        {{> header/nav-item link="#" title="زیست بوم" }}
+                        {{> header/nav-item link="#" title="قیمت" }}
                     </ul>
                 </div>
                 <div class="navbar__left">
@@ -34,10 +24,6 @@
         </div>
     </div>
 
-    <div class="navbar__mobile">
-        <div class="navbar__logo">
-            <a href="/">{{> svg/logo }}</a>
-        </div>
-        <span>{{> svg/menu }}</span>
-    </div>
+    {{> header/mobile-nav }}
+
 </nav>

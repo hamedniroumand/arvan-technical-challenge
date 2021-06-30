@@ -7,7 +7,9 @@
     &__head {
       display: flex;
       align-items: flex-end;
-
+    @include responsive(sm) {
+      align-items: center;
+    }
       h2 {
         margin-right: 0.5rem;
       }
@@ -48,8 +50,10 @@
 
   .container {
     padding-top: .5rem;
+
     .content-box {
       position: relative;
+
       .content-wrapper {
         display: none;
         background-color: white;
@@ -61,6 +65,10 @@
         border-radius: 13px;
         @include responsive(md) {
           width: 100%;
+        }
+
+        .text-secondary {
+          color: $primary-color;
         }
 
         .paragraph {
@@ -89,16 +97,19 @@
             right: 15%;
           }
         }
+
         &:nth-child(2) {
           &:before {
             right: 35%;
           }
         }
+
         &:nth-child(3) {
           &:before {
             right: 60%;
           }
         }
+
         &:nth-child(4) {
           &:before {
             right: 84%;
@@ -118,9 +129,11 @@
     display: none;
     margin-top: 2rem;
     padding: 0 15px;
+
     * {
       font-size: 1.1rem;
     }
+
     ul {
       li {
         background: #D4DFEE;
@@ -132,6 +145,7 @@
           font-weight: bold;
         }
       }
+
       li.active {
         background-color: $primary-color;
         color: white;

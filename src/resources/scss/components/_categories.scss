@@ -1,6 +1,9 @@
 .categories {
 
   .section-info {
+    @include responsive(sm) {
+      text-align: center;
+    }
     .section-subtitle {
       margin: 0 2.5rem;
       @include responsive(md) {

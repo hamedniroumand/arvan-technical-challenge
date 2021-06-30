@@ -42,17 +42,25 @@ const mountMeetingResponsiveSlider = (currentWindowWidth) => {
 
 var successProjectSlider = null;
 const mountSuccessProjectsSlider = (currentWindowWidth) => {
+    const successProjectsSliderEl = document.querySelector(".success-projects-slider")
     if(currentWindowWidth < breakPoints.sm) {
        if(successProjectSlider) {
-           successProjectSlider.destroy();
+           successProjectSlider = successProjectSlider.destroy();
        }
-       document.querySelector(".success-projects-slider").classList.remove("splide")
+
+        successProjectsSliderEl.classList.remove("splide")
     }
     else {
+        successProjectsSliderEl.classList.add("splide")
         successProjectSlider = new Splide('#success-projects-slider', {
             direction: "rtl",
             perPage: 7,
             pagination: false,
+            breakpoints: {
+                576: {
+                    arrows: false
+                }
+            }
         }).mount();
         document.querySelector(".success-projects-slider").classList.add("splide")
     }

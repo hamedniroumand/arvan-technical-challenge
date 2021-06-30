@@ -48,7 +48,7 @@ const emailInput = form.querySelector("input[id='email']");
 const resumeInput = form.querySelector("input[id='resume']");
 const portfolioInput = form.querySelector("input[id='portfolio']");
 const companyInput = form.querySelector("input[id='company']");
-const descriptionInput = form.querySelector("input[id='description']");
+const descriptionInput = form.querySelector("textarea[id='description']");
 const typeInput = form.querySelector("input[name='type']:checked");
 const levelInput = form.querySelector("input[name='level']:checked");
 const submitBtn = form.querySelector("button[type='submit']");
@@ -91,6 +91,7 @@ requiredValidation.validate();
 form.addEventListener("submit", (event) => {
     event.preventDefault();
 
+
     otherValidation.clearInvalidClass()
     const result = otherValidation.validate()
 
@@ -103,15 +104,10 @@ form.addEventListener("submit", (event) => {
             formResult.classList.add("form-result-success")
             formResult.innerHTML = `
             <ul>
-            <li>درخواست شما با موفقیت ثبت گردید</li>
-</ul>`
+                 <li>درخواست شما با موفقیت ثبت گردید</li>
+            </ul>`
         })
-        console.log({httpResult})
-        if(httpResult) {
-
-        }
     } else {
-
         let html = '';
         for (const errorsKey in result.errors) {
             form.querySelector(`#${errorsKey}`).classList.add("invalid")

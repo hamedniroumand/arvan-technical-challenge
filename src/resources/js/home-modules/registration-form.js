@@ -17,7 +17,7 @@ const toggleDisplay = (elements, display, isSingle = false) => {
     }
 }
 
-const setSelectValue = (labels, ) => {
+const setSelectValue = () => {
    const checkedType = document.querySelector("input[name='type']:checked");
    const checkedLevel = document.querySelector("input[name='level']:checked");
 
@@ -37,9 +37,11 @@ document.addEventListener("DOMContentLoaded", () => {
 const changeRegisterFormToResponsiveMode = (currentWindowWidth) => {
 
     const labels = document.querySelectorAll(".select-group > .label");
+    const fileLabels = document.querySelectorAll(".file-group .label");
 
     if(currentWindowWidth <= breakPoints.sm) {
         toggleDisplay(labels, "none");
+        toggleDisplay(fileLabels, "none");
 
         Array.from(labels).forEach(label => {
             const selectGroup = label.closest(".select-group")
@@ -47,13 +49,28 @@ const changeRegisterFormToResponsiveMode = (currentWindowWidth) => {
             selectGroup.querySelector(".custom-select p").innerHTML = label.innerHTML
         })
 
+        Array.from(fileLabels).forEach(label => {
+            label.parentNode.querySelector(".custom-file").innerHTML = label.innerHTML
+        })
+
     } else {
         toggleDisplay(labels, "block");
+        toggleDisplay(fileLabels, "block");
 
         Array.from(labels).forEach(label => {
             const selectGroup = label.closest(".select-group")
             if(selectGroup.querySelector(".custom-select p").innerHTML === "") return;
             selectGroup.querySelector(".custom-select p").innerHTML = ""
+        })
+
+        Array.from(fileLabels).forEach(label => { //optional
+            const customFile = label.parentNode.querySelector(".custom-file")
+            if(customFile.classList.contains("optional")) {
+                customFile.innerHTML = "اختیاری"
+            } else {
+                customFile.innerHTML = ""
+            }
+
         })
     }
 }

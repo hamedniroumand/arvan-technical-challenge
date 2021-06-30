@@ -21,8 +21,8 @@ section.projects {
       }
       li {
         min-width: 7rem;
-        height: 2.5rem;
-        padding: 0.6rem 1rem;
+        height: auto;
+        padding: 0.82rem 1rem;
         background-color: #E7ECF4;
         border-top-left-radius: 12px;
         border-top-right-radius: 12px;
@@ -158,6 +158,9 @@ section.projects {
                   &:not(:first-child) {
                     margin-top: 0.8rem;
                   }
+                  &.title {
+                    font-weight: bold;
+                  }
                 }
 
                 &__item.subtitle {
@@ -276,6 +279,17 @@ section.projects {
                   font-size: 0.8rem;
                 }
               }
+            }
+          }
+
+          .cta {
+            display: none;
+            @include responsive(sm) {
+              display: block;
+            }
+            margin-top: 1.4rem;
+            a {
+              width: 100%;
             }
           }
         }

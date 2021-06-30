@@ -48,6 +48,9 @@ h2, h3, h4, h5, h6 {
 .heading-subtitle {
   color: $primary-color;
   font-size: 1.2rem;
+  @include responsive(sm) {
+    font-size: 1.5rem;
+  }
 }
 
 .text-subtitle {
@@ -62,6 +65,12 @@ h2, h3, h4, h5, h6 {
 
 .section-info {
   text-align: center;
+  @include responsive(sm) {
+    text-align: unset;
+    .section-title {
+      font-size: 1.6rem;
+    }
+  }
   .section-title {
     font-weight: 700;
     margin-bottom: 1rem;

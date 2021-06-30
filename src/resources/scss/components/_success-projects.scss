@@ -12,7 +12,13 @@
       }
     }
 
-    .splide__list {
+    .splide__arrows {
+      @include responsive(sm) {
+        display: none;
+      }
+    }
+
+    .splide__list, ul {
       @include responsive(sm) {
         display: flex;
         flex-wrap: wrap;

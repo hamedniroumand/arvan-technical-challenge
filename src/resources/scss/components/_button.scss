@@ -6,7 +6,7 @@
 }
 
 .btn-primary {
-  background-color: lighten($primary-color-dark, 3);
+  background-color: $primary-color;
   transition: background-color 0.3s;
   border-radius: 12px;
   border: none;

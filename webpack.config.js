@@ -157,7 +157,7 @@ module.exports = (env, {mode}) => {
                     nodir: true,
                 }),
                 safelist: () => ({
-                    standard: ['active', 'deactivated', 'selected', /^splide*/, 'is-active', /splide*/, 'is-visible', 'fixed'],
+                    standard: ['active', 'deactivated', 'selected', /^splide*/, 'is-active', /splide*/, 'is-visible', 'fixed', 'invalid', 'form-result-error', 'form-result-success'],
                     deep: [],
                     greedy: [],
                 }),

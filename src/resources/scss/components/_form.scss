@@ -15,6 +15,7 @@
     box-shadow: 0 0 3px rgba(136, 141, 147, 0.7);
     outline: none;
   }
+
   &:not(.invalid):focus-visible {
     border-color: transparent;
     box-shadow: 0 0 3px rgba(136, 141, 147, 0.7);
@@ -23,10 +24,10 @@
 }
 
 .input {
-  @include responsive(sm) {
-    border: none;
-    &:focus, &:focus-visible {
-      box-shadow: none;
+  border: none;
+  &:focus, &:focus-visible {
+    @include responsive(sm) {
+      box-shadow: none !important;
     }
   }
 }
@@ -45,6 +46,7 @@
   align-items: center;
   margin-bottom: 1rem;
   position: relative;
+
   label {
     @include responsive(sm) {
       display: none;
@@ -99,31 +101,37 @@
     padding: 0.6rem 0.7rem;
   }
 }
+
 .file-group {
   div {
     display: flex;
     align-items: center;
     justify-content: space-between;
   }
+
   .input-notice {
     display: block;
     text-align: left;
     font-size: 0.75rem;
     color: #9DB0CB;
+
     &:first-of-type {
       margin-top: 0.5rem;
     }
   }
+
   .input-error {
     color: #F77D7D;
     display: none;
   }
 }
+
 .file-group.has-error {
   .input-error {
     display: block;
   }
 }
+
 .select-group {
   display: flex;
   align-items: center;
@@ -149,6 +157,7 @@
 
 .custom-select {
   position: relative;
+
   &:before {
     content: "";
     position: absolute;
@@ -187,7 +196,6 @@
 }
 
 .custom-select.active {
-  border-width: 2px;
   &:before {
     transform: rotate(45deg);
     top: 20px;
@@ -228,6 +236,7 @@
   text-overflow: ellipsis;
   overflow: hidden;
   white-space: nowrap;
+  color: $primary-color;
   &:after {
     border-color: $primary-color;
     color: white;
@@ -250,13 +259,15 @@
   border: 1px solid #DBE4F2;
   padding: 0.4rem .7rem;
   width: 82%;
+  align-items: center;
+  display: flex;
   @include responsive(sm) {
-    width: 75%;
+    width: 100%;
   }
   min-height: 37.8px;
   position: relative;
   cursor: pointer;
-  color: $primary-color;
+
 
   &:hover {
     border-color: $primary-color;
@@ -291,24 +302,31 @@
 form {
   .invalid {
     border-color: $error-color;
+
     &:after {
       border-color: $error-color;
       color: $error-color;
     }
   }
 }
+
 .form-result {
   padding: 1rem;
   margin-top: 1rem;
   border-radius: 10px;
   transform: scaleY(0);
+  @include responsive(sm) {
+    margin: 1rem 1.5rem 0 1.5rem;
+  }
 }
+
 .form-result-error {
   transform: scaleY(1);
   background: rgba($error-color, 0.05);
   border: 1px solid darken($error-color, 25);
   color: darken($error-color, 25);
 }
+
 .form-result-success {
   transform: scaleY(1);
   background: rgba($primary-color, 0.05);
