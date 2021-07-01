@@ -17,10 +17,6 @@ export default class HttpService {
         });
     }
 
-    get(config = {}) {
-        return this.http.get(this.url, config)
-    }
-
     post(body, config = {}) {
         return this.http.post(this.url, body, config)
     }
