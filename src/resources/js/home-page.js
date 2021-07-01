@@ -76,14 +76,15 @@ const otherValidation = new Validation({
     ],
     minLengths: [
         {input: nameInput, length: 3},
-        {input: phoneInput, length: 10},
+        {input: phoneInput, length: 11},
     ],
     maxLengths: [
         {input: nameInput, length: 250},
-        {input: phoneInput, length: 13},
+        {input: companyInput, length: 250},
+        {input: phoneInput, length: 11},
+        {input: descriptionInput, length: 800},
     ]
 }, () => {
-    hamed()
 }, false);
 
 requiredValidation.validate();
@@ -91,41 +92,36 @@ requiredValidation.validate();
 form.addEventListener("submit", (event) => {
     event.preventDefault();
 
-
     otherValidation.clearInvalidClass()
     const result = otherValidation.validate()
 
     const formResult = document.querySelector('.form-result');
 
-    if(result.status) {
+    if (result.status) {
         const httpResult = storeData();
-        httpResult.then(success => {
-            formResult.classList.remove("form-result-error")
-            formResult.classList.add("form-result-success")
-            formResult.innerHTML = `
-            <ul>
-                 <li>درخواست شما با موفقیت ثبت گردید</li>
-            </ul>`
+        httpResult
+            .then(success => {
+                renderStatus(['درخواست شما با موفقیت ثبت گردید'], true);
+            }).catch(err => {
+            console.log(err)
+            renderStatus(['مشکلی در ثبت اطلاعات وجود دارد'], false);
         })
     } else {
-        let html = '';
+        let errors = [];
         for (const errorsKey in result.errors) {
             form.querySelector(`#${errorsKey}`).classList.add("invalid")
-            html += '<ul>'
             result.errors[errorsKey].forEach(err => {
-                html += `<li>${err}</li>`
+                errors.push(err)
             });
         }
-        html += '</ul>'
-        formResult.innerHTML = html;
-        formResult.classList.add("form-result-error")
-        formResult.classList.remove("form-result-success")
+        renderStatus(errors, false)
     }
 })
 
 const storeData = () => {
     const DOC_ID = "8xnvXH97O2";
     const TABLE_ID = "grid-ldfgyo_r1s"
+
     form.querySelector("button[type='submit']").setAttribute("disabled", "disabled");
 
     const body = {
@@ -162,9 +158,27 @@ const storeData = () => {
     const http = new httpService(`docs/${DOC_ID}/tables/${TABLE_ID}/rows`);
     return http.post(body)
         .then(response => {
-            if (response.status) {
-                return true
-            }
+            if (response.status === 202) return true
         })
         .catch(err => false);
+}
+
+
+const renderStatus = (messages, success = false) => {
+    const formResult = document.querySelector('.form-result');
+    if (success) {
+        formResult.classList.remove("form-result-error")
+        formResult.classList.add("form-result-success")
+    } else {
+        formResult.classList.add("form-result-error")
+        formResult.classList.remove("form-result-success")
+    }
+
+    let html = "<ul>";
+    messages.forEach(error => {
+        html += `<li>${error}</li>`
+    });
+    html += "</ul>";
+
+    formResult.innerHTML = html;
 }
