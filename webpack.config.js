@@ -34,7 +34,7 @@ const config = {
     },
     resolve: {
         alias: {
-            "@": path.resolve(__dirname, "src", "resources"),
+            "@": path.resolve(__dirname, "src", "resources", "js"),
             "~": path.resolve(__dirname, "src"),
         },
     },

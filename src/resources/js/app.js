@@ -1,9 +1,15 @@
-import {breakPoints} from "./home-modules/registration-form";
+import {breakPoints} from "./helper";
 
 var expandedIndex = [];
 let scrollState = 0;
 
-Array.from(document.querySelectorAll('.expand-description')).forEach((element, index) => {
+const toogleProjectItem = document.querySelectorAll('.expand-description')
+const tabs = document.querySelectorAll(".tab");
+const customSelectsInput = document.querySelectorAll('.custom-select__item input');
+const customSelects = document.querySelectorAll(".custom-select");
+const customFiles = document.querySelectorAll(".custom-file");
+
+Array.from(toogleProjectItem).forEach((element, index) => {
     element.addEventListener("click", (event) => {
         const parentNode = event.target.closest('.project-item');
         if (!parentNode) return;
@@ -27,7 +33,7 @@ Array.from(document.querySelectorAll('.expand-description')).forEach((element, i
     });
 });
 
-Array.from(document.querySelectorAll(".tab")).forEach(element => {
+Array.from(tabs).forEach(element => {
     element.addEventListener("click", (event) => {
         const id = element.getAttribute("data-id");
         const type = element.getAttribute("data-type");
@@ -46,19 +52,19 @@ Array.from(document.querySelectorAll(".tab")).forEach(element => {
 });
 
 document.addEventListener("click", () => {
-    document.querySelectorAll(".custom-select").forEach(customSelect => {
+    customSelects.forEach(customSelect => {
         customSelect.classList.remove("active")
     });
 })
 
-Array.from(document.querySelectorAll('.custom-select__item input')).forEach(element => {
+Array.from(customSelectsInput).forEach(element => {
     element.addEventListener('change', (e) => {
         e.target.closest('.custom-select').querySelector("p").innerHTML = e.target.nextSibling.nextElementSibling.innerHTML;
         e.target.closest('.custom-select').classList.remove('active')
     });
 });
 
-document.querySelectorAll(".custom-select").forEach(customSelect => {
+customSelects.forEach(customSelect => {
     customSelect.addEventListener("click", (event) => {
         event.stopPropagation();
         if(!event.target.classList.contains('custom-select__item')) {
@@ -67,7 +73,7 @@ document.querySelectorAll(".custom-select").forEach(customSelect => {
     });
 });
 
-Array.from(document.querySelectorAll(".custom-file")).forEach(label => {
+Array.from(customFiles).forEach(label => {
     label.nextSibling.nextElementSibling.addEventListener("change", event => {
         label.innerHTML = event.target.files[0].name;
         label.classList.add("selected")
@@ -85,7 +91,6 @@ const onDocumentScrolled = () => {
     const header = document.querySelector(".main-header");
     const navbar = document.querySelector(".main-nav");
     const headerHeight = header.clientHeight;
-    const navHeight = navbar.clientHeight;
     const topOfWindow = window.scrollY;
 
     if(window.innerWidth > breakPoints.lg) {

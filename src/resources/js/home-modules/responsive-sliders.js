@@ -1,5 +1,5 @@
 import Splide from "@splidejs/splide";
-import {breakPoints} from "./registration-form";
+import {breakPoints} from "@/helper";
 
 const mountSliders = (width, sliderSelector, breakPoint, elementToHidden, elementToShow, sliderOption) => {
     if (width < breakPoint) {
